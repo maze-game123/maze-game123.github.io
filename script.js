@@ -18,5 +18,9 @@ function drawMaze() {
   context.fillRect(player.x, player.y, player.size, player.size);
   
   //Draw goal
-  context.fillStyle="green"
+  context.fillStyle="green";
   
+context.fillRect(goal.x, goal.y, goal.size, goal.size);
+
+//Draw walls
+context.fillStyle="black"
