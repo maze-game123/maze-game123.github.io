@@ -39,4 +39,26 @@ function isCollision(rect1, rect2) {
 }
 document.addEventListener("keydown", function(event)
 {
-  
+let prevX=player.x;
+let prevY=player.y;
+
+  if(event.key==="ArrowRight) player.x +=20;
+  if(event.key==="ArrowLeft) player.x -=20;
+  if(event.key==="ArrowUp) player.y-=20;
+  if(event.key==="ArrowDown) player.y +=20;
+
+  for(let wall of walls) {
+   if(isCollision(player, wall)){
+     player.x=prevX;
+     player.y=prevY;
+   }
+  }
+
+  if(isColision(player, goal)) {
+
+  document.getElementById("winMessage").textContent=
+    "You made it!";
+  }
+
+    drawMaze()
+});
