@@ -1,7 +1,7 @@
 let canvas=document.getElementById("mazeCanvas");
 let context=canvas.getContext("2d");
 
-let palyer={x: 20, y: 20, size:20 };
+let player={x: 20, y: 20, size:20 };
 let goal={x:360, y:360, size:20, };
 
 let walls= [
