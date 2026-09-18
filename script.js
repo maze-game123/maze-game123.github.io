@@ -62,3 +62,5 @@ let prevY=player.y;
 
     drawMaze()
 });
+
+drawMaze()
